@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased transition-colors duration-300;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-glass-light dark:bg-glass-dark shadow-glass-light dark:shadow-glass-dark backdrop-blur-md border border-white/20 dark:border-white/10 rounded-2xl;
+  }
+  .gradient-bg {
+    @apply bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen;
+  }
+}
